@@ -1,0 +1,78 @@
+.hero{
+   @include small{
+        width: 100%;
+        height: auto;
+        &__img{
+            width: 100%;
+            height: 238px;
+            background-image: url('../assets/images/img-6.jpg');
+            background-position: 98%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*img{
+                width: 100%;
+                height: 100%;
+                object-fit:cover ;
+                image-orientation: flip;
+            }*/
+        }
+        &__body{
+            width: 360px;
+            height: 363px;
+            padding: 24px 16px 48px 16px;
+            color:$color--white;
+            &__img{
+                width: 161.25px;
+                height: 63px;        
+            }
+            &__article{
+                height: 132px;
+                width: 328px;
+                margin-top: 24px;
+            }
+        }
+        &__button{
+            @include botton(141px, $color--primary);
+            border: unset;
+        }
+   }
+   @include tablet{
+    width: 100%;
+    height: auto;
+    &__img{
+        width: 100%;
+        height: 438px;
+        background-image: url('../assets/images/img-6.jpg');
+        background-position: 98%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*img{
+            width: 100%;
+            height: 100%;
+            object-fit:cover ;
+            image-orientation: flip;
+        }*/
+    }
+    &__body{
+        width: 360px;
+        height: 363px;
+        padding: 24px 16px 48px 16px;
+        color:$color--white;
+        position: absolute;
+        top: 132px;
+        &__img{
+            width: 161.25px;
+            height: 63px;        
+        }
+        &__article{
+            height: 132px;
+            width: 328px;
+            margin-top: 24px;
+        }
+    }
+    &__button{
+        @include botton(141px, $color--primary);
+        border: unset;
+    }
+}
+}

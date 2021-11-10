@@ -1,0 +1,19 @@
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 576px;
+    font: $font-caption-bold;
+    top: 55%;
+    left: 50%;
+    bottom: 100%;
+    color: $color--white;
+    transform: translate(-50%, -50%);
+    background-color: $color--black;
+    padding: 16px;
+    z-index: 0;
+    li{
+        text-decoration: none;
+        list-style: none;
+        margin-bottom: 24px;
+    }
+}

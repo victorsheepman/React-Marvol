@@ -1,0 +1,70 @@
+.footer{
+    width: 100%;
+    height: auto;
+    @include small{
+        &__wrapper{
+            width: 100%;
+            height: auto;
+
+            figure{
+              width: 100%;
+              height: 360px;  
+            }
+            
+            &__body{
+                width: 100%;
+                height: 232px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: $color--white;
+
+                span{
+                 color: $color--primary;
+                 margin-bottom: 24px;   
+                } 
+
+                p{
+                    text-align: center; 
+                }
+                button{
+                    @include botton(169px,$color--primary);
+                    margin-top: 40px;
+                }
+            }
+            &__bottom{
+                height: 600px;
+                width: 360px;
+                padding: 64px 16px 64px 16px;
+               
+                ul{
+                    height: 312px;
+                    width: 226px;
+                    color: $color--white;
+                    margin-top: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                li{
+                    list-style: none;
+                }
+            }
+            &__social{
+                height: 70px;
+                width: 192px;
+                margin-top: 55px;
+                color: $color--white;
+                &--icons{
+                    
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    margin-top: 15px;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
