@@ -95,4 +95,63 @@
         }
 
     }
+    @include medium{
+        height: 568px;
+        color: $color--white;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        &__img{
+            background-image: url('../assets/images/toys.png');
+            width: 50%;
+            height: 100%;
+            background-position: 98%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__body{
+            width: porcentaje(404);
+            
+            height: 198px;
+            padding: 0; 
+            margin-left: porcentaje(85);  
+            
+        }
+        h2{
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 47px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        &__noticias{
+            width: 100%;
+            height: 964px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: unset;
+            h2{
+                margin-left: 15%;
+            }
+            &__wrapper{
+                height: 852px;
+                width: 100%;
+                margin-top: 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+        }
+       
+    }
+   
+} 
+.wrapper__Slider{
+    width: 100%;
+    height: 212px;
+    background-color: $color--white;
 }

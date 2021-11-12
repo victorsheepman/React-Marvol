@@ -44,10 +44,13 @@
     }
     @include tablet{
         width: 100%;
-        height: 64px;
+        height: 92px;
         background-color: $color--black;
         display: flex;
         align-items: center;
+        &__bottom{
+            display: none;
+        }
         &__hamburguer{
             width: 24px;
             height: 24px;
@@ -69,4 +72,60 @@
             }
         }
     }
+    @include medium{
+        width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    &__top{
+        width: 100%;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        padding-left: porcentaje(83);
+        border-bottom: 1px solid $color--white;
+        &__register{
+            display: block;
+            height: 52px;
+            width: 163px;
+            border-left: 1px solid $color--white;
+            border-right: 1px solid $color--white;
+            margin-right:  porcentaje(387);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $color--white;
+        }
+        
+    }
+    &__hamburguer{
+       display: none;
+    }
+    &__bottom{
+        width: 100%;
+        height: 40px;
+        
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__nav{
+            width: porcentaje(759);
+            height: 24px;
+        }
+        ul{
+           
+            display: flex;
+            justify-content: space-between;
+        }
+        li{ color: $color--white;
+            list-style: none;
+        }
+    }
+    }
+    a{
+        text-decoration: unset;
+        color: $color--white;
+    }
+
 }

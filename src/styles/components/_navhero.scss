@@ -1,0 +1,52 @@
+.NavHero{
+   
+   @include desktop{
+       position: absolute ;
+    width: porcentaje(874);
+    height: 68px;
+    left: 83px;
+    top: 492px;
+    background-color: $color--white;
+  
+    &__menu{
+        width: 100%;
+        height: 100%;  
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: $color--black;
+        li{
+            list-style: none;
+        }
+        &--red{
+            border-top: 4px solid $color--primary;
+            height: 100%;
+            padding-top: 2%;
+            color: $color--primary;
+        }
+    }
+   }
+   @include tablet{
+    display: none;
+  
+    &__menu{
+        display: none;
+        li{
+            display: none;
+        }
+        &--red{
+            display: none;
+        }
+    }
+   }
+    
+    @include small{
+        display: none;
+        &__menu{
+            display: none;
+            li{
+                display: none;
+            }
+        }
+    }
+}

@@ -74,5 +74,41 @@
             }
         }
     }
+    @include medium{
+        overflow-x: unset;
+        overscroll-behavior-x: unset;
+        scroll-snap-type: none;
+        width: porcentaje(1200);
+        margin-left: porcentaje(83);
+        justify-content: space-between;
+        position: absolute;
+        top: 135%;
+        &__card{
+            position: relative;
+            width: 269px;
+            height: 239px;
+            margin-right: 24px;
+            &__img{
+                height: 151px;
+                width: 269px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &__body{
+                width: 269px;
+                height: 48px;
+                margin-top: 16px;
+                span{
+                    color: $color--grey;
+                }
+                p{
+                    color: $color--black;
+                }
+            }
+        }
+        
+    }
     
 }

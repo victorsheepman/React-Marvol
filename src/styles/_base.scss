@@ -18,6 +18,9 @@ $font-body2-regular: 400 0.875rem/1.5rem 'Roboto';
 $font-caption-regular: 400 0.75rem/1.5rem 'Roboto'; 
 $font-caption-bold: 700 0.75rem/1.5rem 'Roboto';
 
+@function porcentaje($width){
+    @return  $width * 100%/1366;
+};
 
 h1{
         //styleName: Headline 1;

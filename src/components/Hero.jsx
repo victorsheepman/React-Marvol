@@ -2,6 +2,7 @@ import React from 'react'
 
 export const Hero = () => {
     return (
+        <>
         <div className="hero">
             <figure className="hero__img">
             </figure>
@@ -18,6 +19,11 @@ export const Hero = () => {
                 </article>
                 <button className="hero__button">ver ahora</button>
             </div>
+            <div className="wrapper__white">
+
+            </div>
         </div>
+        
+        </>
     )
 }

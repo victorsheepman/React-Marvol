@@ -30,7 +30,15 @@ export const Slider = () => {
                     <p className="body-2-bold">Guía de regalos navideños: funko Pops</p>
                 </div>
             </div>
-            
+            <div className="slider__card">
+                <figure className="slider__card__img">
+                    <img src="assets/images/card-4.png" alt="" />
+                </figure>
+                <div className="slider__card__body">
+                   <span className="body-2-bold">ENGRANAJE</span>  
+                    <p className="body-2-bold">Guía de regalos navideños: Cozy and Comfy Longewear</p>
+                </div>
+            </div>
             
         </div>
     )

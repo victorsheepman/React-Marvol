@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid $color--grey;
-    
+    margin-top: 48px;
     &__img{
         height: 61px;
         width: 110px;
@@ -20,6 +20,41 @@
         color: $color--black;
         h3{
             color: $color--grey;
+        }
+    }
+    @include medium{
+        height: 236px;
+        width: porcentaje(949);
+        margin-left: 15%;
+        border-bottom: 1px solid $color--grey;
+        justify-content: flex-start;
+        &__img{
+            width: 420px;
+            height: 236px;
+            margin-right: 32px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        &__body{
+            height: 72px;
+            width: porcentaje(497);
+            color: $color--black;
+            h3{
+                color: $color--grey;
+            }
+            p{
+                
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            }
         }
     }
 }
