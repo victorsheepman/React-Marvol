@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Article } from '../components/Article'
 import { Hero } from '../components/Hero'
 import { Noticia } from '../components/Noticia'
 import { Slider } from '../components/Slider'
 import NavHero from '../components/NavHero'
+import { AppContext } from '../context/AppContext'
+import { Movies } from '../components/Movies'
+import { movies } from '../data/movie'
+import { series } from '../data/serie'
+
 
 export const Home = () => {
     const news = [
@@ -25,6 +30,9 @@ export const Home = () => {
             img:'assets/images/img-2.jpg'
         }
     ]
+
+
+    const {show, tv} = useContext(AppContext);
     return (
         <>
             <Hero />
@@ -48,6 +56,12 @@ export const Home = () => {
                 </div>
                 
             </div>
+            {
+                show && <Movies database={movies} title={'Peliculas'} />
+            }
+            {
+                tv && <Movies database={series} title={'PROGRAMAS DE TELEVISIÓN'} />
+            }
 
         </>
     )

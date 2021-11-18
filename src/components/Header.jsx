@@ -1,9 +1,13 @@
-import React from 'react'
-import { useState } from 'react'
+import React,{useContext} from 'react'
 import { Link } from 'react-router-dom';
+import { AppContext } from '../context/AppContext';
 import {Menu} from './Menu';
+import { Movies } from './Movies';
+
+
+
 export const Header = () => {
-    const [modal, setModal]=useState(false);
+    const {setShow, setTv} = useContext(AppContext);
     return (
         <header className="header">
             <div className="header__top">
@@ -25,15 +29,20 @@ export const Header = () => {
                         <li>
                           <Link  to='/comic'>HISTORIETAS</Link> 
                         </li>
-                        <li>PELÍCULAS</li>
-                        <li>PROGRAMAS DE TELEVISÓN</li>
+                        <li 
+                            onMouseEnter={() => setShow(true)}
+                            onMouseLeave={() => setShow(false)}
+                        >PELÍCULAS</li>
+                        <li 
+                            onMouseEnter={() => setTv(true)}
+                            onMouseLeave={() => setTv(false)}
+                        >PROGRAMAS DE TELEVISÓN</li>
                         <li>JUEGOS</li>
                         <li>NOTICIAS</li>
                         <li>MÁS</li>
                     </ul>
                 </nav>
             </div>
-            {modal && <Menu />}
         </header>
 
     )
