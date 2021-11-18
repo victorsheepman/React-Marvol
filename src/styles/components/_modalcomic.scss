@@ -1,0 +1,299 @@
+.modalcomic{
+    @include small{
+        width: 100%;
+        height: auto;
+        &__top{
+            width: 100%;
+            height: auto;
+            background-image: url('../assets/images/img-8.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: 0px;
+            color: $color--white;
+            
+            &__img{
+                height: 307px;
+                width: 200px;
+               
+            }
+            //modal info
+            &__body{
+                width: 100%;
+                height: 460px;
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &__info{
+                    width: 328px;
+                    height: 52px;
+                    &--large{
+                        width: 328px;
+                        height: 52px;
+                        display: flex;
+                        justify-content: space-between;
+
+                    }
+                }
+                &__description{
+                    width: 100%;
+                    height: 120px;
+                }
+            }
+            &--dark{
+                height: 885px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            &__menu{
+                height: 56px;
+                width: 100%;
+                background-color: $color--black;
+                border-top: 1px solid $color--white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &__item{
+                    width: 72px;
+                    height: 24px;
+                    display: flex;
+                    justify-content: space-between;
+                    color: $color--white;
+                    &--large{
+                        @extend .modalcomic__top__menu__item;
+                        width: 190px;
+                    }
+                }
+            }
+        }
+        &__buttom{
+            width: 100%;
+            height: 888px;
+            padding: 32px 16px 32px 16px;
+            background-color: $color--black;
+            color: $color--white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &__list{
+                width: 328px;
+                height: 232px;
+                
+                ul{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+                }
+                li{
+                    list-style: none;
+                    margin-left: -11%;
+                }
+            }
+        }
+    }
+    @include tablet{
+        width: 100%;
+        height: auto;
+        &__top{
+            width: 100%;
+            height: auto;
+            background-image: url('../assets/images/img-8.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: 0px;
+            color: $color--white;
+            
+            &__img{
+                height: 307px;
+                width: 200px;
+               
+            }
+            //modal info
+            &__body{
+                width: 100%;
+                height: 460px;
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &__info{
+                    width: 328px;
+                    height: 52px;
+                    &--large{
+                        width: 328px;
+                        height: 52px;
+                        display: flex;
+                        justify-content: space-between;
+
+                    }
+                }
+                &__description{
+                    width: 100%;
+                    height: 120px;
+                }
+            }
+            &--dark{
+                height: 885px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            &__menu{
+                height: 56px;
+                width: 100%;
+                background-color: $color--black;
+                border-top: 1px solid $color--white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &__item{
+                    width: 72px;
+                    height: 24px;
+                    display: flex;
+                    justify-content: space-between;
+                    color: $color--white;
+                    &--large{ 
+                        width: 190px;
+                        height:24px ;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+        &__buttom{
+            width: 100%;
+            height: 888px;
+            padding: 32px 16px 32px 16px;
+            background-color: $color--black;
+            color: $color--white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &__list{
+                width: 328px;
+                height: 232px;
+                
+                ul{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+                }
+                li{
+                    list-style: none;
+                    margin-left: -11%;
+                }
+            }
+        }
+    }
+    @include medium{
+        width: 100%;
+        height: auto;
+        animation: open 0.8s forwards linear;
+        opacity: 0;
+        &__top{
+            width: 100%;
+            height: auto;
+            background-image: url('../assets/images/img-8.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: 0px;
+            color: $color--white;
+            
+            &__img{
+                height: 538px;
+                width: 350px;
+                background-color: aqua;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            //modal info
+            &__body{
+                width: 35%;
+                height: 460px;
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &__info{
+                    width: 328px;
+                    height: 52px;
+                    &--large{
+                        width: 328px;
+                        height: 52px;
+                        display: flex;
+                        justify-content: space-between;
+
+                    }
+                }
+                &__description{
+                    width: 100%;
+                    height: 120px;
+                }
+            }
+            &--dark{
+                
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+            &__menu{
+                height: 56px;
+                width: 100%;
+                background-color: $color--black;
+                border-top: 1px solid $color--white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &__item{
+                    width: 72px;
+                    height: 24px;
+                    display: flex;
+                    justify-content: space-between;
+                    color: $color--white;
+                    &--large{ 
+                        width: 190px;
+                        height:24px ;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+        &__buttom{
+            flex-direction: row;
+            padding-top: 64px;
+            height: 424px;
+           
+        }
+    }
+    
+}
+@keyframes open {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
